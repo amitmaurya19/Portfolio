@@ -1,0 +1,166 @@
+/* Base styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #00ffcc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #00ffcc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+nav {
+  
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #003f5c; /* Darker blue */
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #005577; /* Blue gradient */
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.dark-section {
+    background: #1a1a1a; /* Dark gray */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffff00; /* Yellow */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #ecf0f1; /* Light gray */
+}
+
+.project-list {
+    padding: 0;
+    margin: 0;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #1a1a1a; /* Dark gray */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.project-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-item img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.project-item .description {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ecf0f1; /* Light gray */
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #00ffcc;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #005577, #003f5c); /* Blue gradient */
+    color: #00ffcc;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #003f5c; /* Darker blue */
+}
+
+footer {
+    background: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    margin-top: auto;
+}
