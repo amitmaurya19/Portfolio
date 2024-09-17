@@ -33,7 +33,7 @@ nav {
     background-color: #000000; /* Black background */
     padding: 10px 0;
     text-align: center;
-    margin: 0; /* Remove margin to separate it cleanly */
+    margin: 0;
     border-bottom: 2px solid #1a1a1a; /* Separator between sections */
 }
 
@@ -87,7 +87,6 @@ p {
 
 .project-item {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
     padding: 20px;
     background: #1a1a1a; /* Dark gray */
@@ -101,19 +100,26 @@ p {
 }
 
 .project-item:nth-child(even) {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* "Jig-jag" alternating layout */
 }
 
 .project-item img {
-    width: 50%;
+    width: 40%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100px; /* Ensure consistent image size */
     border-radius: 10px;
+    object-fit: cover; /* Ensure the image fits the area without distortion */
 }
 
-.project-item .description {
-    width: 50%;
-    padding: 20px;
+.project-item .project-description {
+    width: 55%;
+    padding: 10px;
     box-sizing: border-box;
-    color: #ecf0f1; /* Light gray */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+    text-align: left;
 }
 
 .project-item:hover {
