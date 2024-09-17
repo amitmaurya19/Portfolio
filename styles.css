@@ -28,11 +28,13 @@ header p {
     font-size: 1.2em;
 }
 
+/* Navbar Styles */
 nav {
-  
+    background-color: #000000; /* Black background */
     padding: 10px 0;
     text-align: center;
-    margin: 10px;
+    margin: 0; /* Remove margin to separate it cleanly */
+    border-bottom: 2px solid #1a1a1a; /* Separator between sections */
 }
 
 nav a {
@@ -50,9 +52,11 @@ nav a:hover {
     background: #005577; /* Blue gradient */
 }
 
+/* Section Styles */
 section {
     padding: 40px;
     text-align: center;
+    margin: 20px 0;
 }
 
 .dark-section {
@@ -75,6 +79,7 @@ p {
     color: #ecf0f1; /* Light gray */
 }
 
+/* Portfolio Project List */
 .project-list {
     padding: 0;
     margin: 0;
@@ -116,6 +121,7 @@ p {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -156,6 +162,7 @@ p {
     background: #003f5c; /* Darker blue */
 }
 
+/* Footer Styles */
 footer {
     background: #1a1a1a;
     padding: 10px;
