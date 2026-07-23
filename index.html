@@ -1,102 +1,2139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit Kumar Maurya - Web Developer</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Amit Kumar Maurya - Software Engineer, Cybersecurity enthusiast and Full-Stack Developer."
+    >
+
+    <title>Amit Kumar Maurya | Software Engineer</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
 </head>
+
 <body>
-    <header>
-        <h1>Amit Kumar Maurya</h1>
-        <p>Web Developer & UI/UX Enthusiast</p>
+
+    <!-- Background Effects -->
+
+    <div class="background-grid"></div>
+
+    <div class="background-glow glow-one"></div>
+
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- ==================================================
+         NAVBAR
+    =================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a
+                href="#home"
+                class="logo"
+            >
+
+                <span class="logo-bracket">
+                    &lt;
+                </span>
+
+                AKM
+
+                <span class="logo-bracket">
+                    /&gt;
+                </span>
+
+            </a>
+
+
+            <div
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a
+                    href="#home"
+                    class="nav-link active"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+
+                <a
+                    href="#projects"
+                    class="nav-link"
+                >
+                    Projects
+                </a>
+
+
+                <a
+                    href="#experience"
+                    class="nav-link"
+                >
+                    Experience
+                </a>
+
+
+                <a
+                    href="#skills"
+                    class="nav-link"
+                >
+                    Skills
+                </a>
+
+
+                <a
+                    href="#achievements"
+                    class="nav-link"
+                >
+                    Achievements
+                </a>
+
+
+                <a
+                    href="assets/Amit_Kumar_Maurya_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="nav-link resume-nav"
+                >
+
+                    Resume
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="nav-link contact-nav"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Amit Kumar Maurya, a passionate web developer specializing in front-end and back-end technologies. With a solid foundation in HTML, CSS, JavaScript, Flutter, Dart, React, Node.js, Express, MongoDB, and Python, I strive to create visually appealing, functional, and user-friendly websites and applications. I'm also skilled in version control using Git and have good English communication skills. Currently, I'm working on various projects, including the Skill Bridge platform. I'm seeking exciting web development projects and internship opportunities to grow my skills further.</p>
-    </section>
-    <section id="portfolio" class="dark-section">
-        <h2>Portfolio</h2>
-        <ul class="project-list">
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>Drone Project</h3>
-                    <p>I designed and built a functional drone as a hobby, integrating hardware and software. This project highlights my skills in hardware-software integration.</p>
+
+
+    <main>
+
+
+        <!-- ==================================================
+             HERO / LANDING PAGE
+        =================================================== -->
+
+        <section
+            id="home"
+            class="hero section"
+        >
+
+            <div class="container hero-container">
+
+
+                <!-- Hero Left -->
+
+                <div class="hero-content reveal">
+
+                    <div class="status-badge">
+
+                        <span class="status-dot"></span>
+
+                        Software Engineering • Cybersecurity • Full Stack
+
+                    </div>
+
+
+                    <p class="hero-intro">
+                        Hello, I'm
+                    </p>
+
+
+                    <h1>
+
+                        Amit Kumar
+
+                        <span>
+                            Maurya.
+                        </span>
+
+                    </h1>
+
+
+                    <h2 class="hero-role">
+
+                        I build software that solves
+
+                        <span id="typingText">
+                            real problems.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        Computer Science Engineer building practical systems
+                        across full-stack development, cybersecurity, network
+                        monitoring, IoT and intelligent automation.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+
+                            Explore My Work
+
+                            <i class="fa-solid fa-arrow-down"></i>
+
+                        </a>
+
+
+                        <a
+                            href="assets/Amit_Kumar_Maurya_Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                            View Resume
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-socials">
+
+                        <a
+                            href="https://github.com/amitmaurya19"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://linkedin.com/in/akmaurya2657"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+
+                        <a
+                            href="mailto:akmaurya2657@gmail.com"
+                            aria-label="Email"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </a>
+
+                    </div>
+
                 </div>
-                <img src="path-to-image/drone-project.jpg" alt="Drone Project">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>QR Code Generator</h3>
-                    <p>A web application that generates QR codes based on user input. It demonstrates my proficiency in JavaScript, HTML, and UI design.</p>
+
+
+                <!-- Hero Terminal -->
+
+                <div class="hero-terminal reveal">
+
+                    <div class="terminal-window">
+
+                        <div class="terminal-header">
+
+                            <div class="terminal-buttons">
+
+                                <span></span>
+
+                                <span></span>
+
+                                <span></span>
+
+                            </div>
+
+                            <p>
+                                amit@portfolio:~
+                            </p>
+
+                        </div>
+
+
+                        <div class="terminal-body">
+
+                            <p>
+
+                                <span class="terminal-prompt">
+                                    $
+                                </span>
+
+                                whoami
+
+                            </p>
+
+
+                            <p class="terminal-output">
+                                Amit Kumar Maurya
+                            </p>
+
+
+                            <p>
+
+                                <span class="terminal-prompt">
+                                    $
+                                </span>
+
+                                cat role.txt
+
+                            </p>
+
+
+                            <p class="terminal-output">
+
+                                Software Engineer
+
+                                <br>
+
+                                Cybersecurity Enthusiast
+
+                                <br>
+
+                                Full-Stack Developer
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="terminal-prompt">
+                                    $
+                                </span>
+
+                                cat highlights.txt
+
+                            </p>
+
+
+                            <p class="terminal-output">
+
+                                <span class="terminal-highlight">
+
+                                    → Samsung Innovation Campus AIR #1
+
+                                </span>
+
+                                <br>
+
+                                → Ex-Intern @ NIELIT Gorakhpur
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="terminal-prompt">
+                                    $
+                                </span>
+
+                                <span class="terminal-cursor">
+                                    _
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <img src="path-to-image/qr-code-generator.jpg" alt="QR Code Generator">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>School Website</h3>
-                    <p>Developed a fully functional website for a school with backend integration. This project showcases my full-stack web development skills.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             ABOUT
+             Border-top creates the same clean section separation
+        =================================================== -->
+
+        <section
+            id="about"
+            class="section about-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        01 / ABOUT
+                    </p>
+
+
+                    <h2>
+
+                        Building beyond
+
+                        <span>
+                            tutorial projects.
+                        </span>
+
+                    </h2>
+
                 </div>
-                <img src="path-to-image/school-website.jpg" alt="School Website">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>YT Playlist Downloader</h3>
-                    <p>A Python-based script that downloads YouTube playlists. It utilizes libraries like pytube and showcases my backend scripting abilities.</p>
+
+
+                <div class="about-grid">
+
+
+                    <div class="about-content reveal">
+
+                        <p class="about-lead">
+
+                            I'm a Computer Science Engineer interested in
+                            building practical systems where software,
+                            cybersecurity and real-world problem solving meet.
+
+                        </p>
+
+
+                        <p>
+
+                            My work spans real-time web applications,
+                            cybersecurity tools, network monitoring,
+                            IoT communication systems, computer vision
+                            and intelligent automation.
+
+                        </p>
+
+
+                        <p>
+
+                            I completed a System and Software Security
+                            internship at NIELIT Gorakhpur under the
+                            ISEA Project Phase-III, Ministry of Electronics
+                            and Information Technology, Government of India.
+
+                        </p>
+
+
+                        <p>
+
+                            I was also recognized as the
+
+                            <strong>
+
+                                National Topper — All India Rank #1
+
+                            </strong>
+
+                            in Coding & Programming at Samsung Innovation
+                            Campus 2024.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-info reveal">
+
+                        <div class="info-card">
+
+                            <span>
+                                LOCATION
+                            </span>
+
+                            <strong>
+                                Gorakhpur, Uttar Pradesh, India
+                            </strong>
+
+                        </div>
+
+
+                        <div class="info-card">
+
+                            <span>
+                                EDUCATION
+                            </span>
+
+                            <strong>
+                                B.Tech — Computer Science & Engineering
+                            </strong>
+
+                            <p>
+                                Deen Dayal Upadhyaya Gorakhpur University
+                            </p>
+
+                            <p>
+                                CGPA: 7.76
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-card">
+
+                            <span>
+                                CORE INTERESTS
+                            </span>
+
+                            <strong>
+                                Software • Security • Systems
+                            </strong>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <img src="path-to-image/yt-playlist-downloader.jpg" alt="YT Playlist Downloader">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>Sorted GitHub Projects Viewer</h3>
-                    <p>A dynamic web application built with JavaScript, allowing users to view and sort GitHub repositories. This project focuses on clean UI and API integration.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PROJECTS
+        =================================================== -->
+
+        <section
+            id="projects"
+            class="section projects-section"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        02 / FEATURED WORK
+                    </p>
+
+
+                    <h2>
+
+                        Projects that
+
+                        <span>
+                            actually do something.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        A selection of projects across cybersecurity,
+                        full-stack development, networking, IoT and
+                        computer vision.
+
+                    </p>
+
                 </div>
-                <img src="path-to-image/sorted-github-projects-viewer.jpg" alt="Sorted GitHub Projects Viewer">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>ChatBot (Python)</h3>
-                    <p>A chatbot designed for university helpdesk queries, leveraging NLP techniques to handle common student inquiries.</p>
+
+
+                <!-- Filters -->
+
+                <div class="project-filters reveal">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="security"
+                    >
+                        Cybersecurity
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="web"
+                    >
+                        Web
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="iot"
+                    >
+                        IoT
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="ai"
+                    >
+                        AI / CV
+                    </button>
+
                 </div>
-                <img src="path-to-image/chatbot.jpg" alt="ChatBot (Python)">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>Env-Bot (NLP-based Chatbot)</h3>
-                    <p>An NLP-based chatbot that provides information on environmental issues, tourism, and travel. Built using datasets and machine learning models.</p>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 01 -->
+
+                    <article
+                        class="project-card featured-project reveal"
+                        data-category="security"
+                    >
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+
+                                <span class="project-type">
+                                    CYBERSECURITY
+                                </span>
+
+                                <span class="featured-badge">
+                                    FEATURED
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+
+                                Advanced Network Monitoring &
+                                Red Teaming Simulation
+
+                            </h3>
+
+
+                            <p>
+
+                                Developed an Android-based network monitoring
+                                system designed to identify abnormal background
+                                network activity and potential data-exfiltration
+                                behavior.
+
+                            </p>
+
+
+                            <p>
+
+                                The project included controlled red-team
+                                simulations to evaluate detection of suspicious
+                                background data transfers and security threats.
+
+                            </p>
+
+
+                            <div class="tech-stack">
+
+                                <span>Android</span>
+
+                                <span>Kotlin</span>
+
+                                <span>Network Security</span>
+
+                                <span>Traffic Analysis</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 02 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="security"
+                    >
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-network-wired"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                CYBERSECURITY
+                            </span>
+
+
+                            <h3>
+                                Network Intrusion Detection System
+                            </h3>
+
+
+                            <p>
+
+                                Python-based NIDS for real-time packet capture,
+                                deep packet inspection and rule-based detection
+                                of suspicious network activity.
+
+                            </p>
+
+
+                            <ul class="project-features">
+
+                                <li>
+                                    Port scan detection
+                                </li>
+
+                                <li>
+                                    SYN flood detection
+                                </li>
+
+                                <li>
+                                    ARP spoofing detection
+                                </li>
+
+                                <li>
+                                    PCAP forensic export
+                                </li>
+
+                            </ul>
+
+
+                            <div class="tech-stack">
+
+                                <span>Python</span>
+
+                                <span>Scapy</span>
+
+                                <span>Networking</span>
+
+                                <span>PCAP</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 03 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="iot security"
+                    >
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-tower-broadcast"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                IoT / COMMUNICATION
+                            </span>
+
+
+                            <h3>
+
+                                Off-Grid Peer-to-Peer LoRa
+                                Communication System
+
+                            </h3>
+
+
+                            <p>
+
+                                Built an internet-independent communication
+                                system using Heltec LoRa 32 V3 boards for
+                                long-range peer-to-peer communication.
+
+                            </p>
+
+
+                            <ul class="project-features">
+
+                                <li>
+                                    LoRa wireless communication
+                                </li>
+
+                                <li>
+                                    Morse-code signaling
+                                </li>
+
+                                <li>
+                                    External keypad integration
+                                </li>
+
+                                <li>
+                                    Off-grid communication concepts
+                                </li>
+
+                            </ul>
+
+
+                            <div class="tech-stack">
+
+                                <span>LoRa</span>
+
+                                <span>ESP32</span>
+
+                                <span>Embedded</span>
+
+                                <span>IoT</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 04 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="web"
+                    >
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-comments"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                FULL STACK
+                            </span>
+
+
+                            <h3>
+                                ChatVerse
+                            </h3>
+
+
+                            <p>
+
+                                Full-stack real-time messaging platform with
+                                dynamic chat rooms, WebSocket communication,
+                                authentication and responsive UI.
+
+                            </p>
+
+
+                            <ul class="project-features">
+
+                                <li>
+                                    Real-time messaging
+                                </li>
+
+                                <li>
+                                    Dynamic chat rooms
+                                </li>
+
+                                <li>
+                                    Typing indicators
+                                </li>
+
+                                <li>
+                                    Authentication & rate limiting
+                                </li>
+
+                            </ul>
+
+
+                            <div class="tech-stack">
+
+                                <span>React</span>
+
+                                <span>Node.js</span>
+
+                                <span>Express</span>
+
+                                <span>Socket.io</span>
+
+                                <span>MongoDB</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://github.com/amitmaurya19/ChatVerse"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                    Source
+
+                                </a>
+
+
+                                <a
+                                    href="https://chat-verse-sigma.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                    Live
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 05 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="iot ai"
+                    >
+
+                        <div class="project-number">
+                            05
+                        </div>
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-square-parking"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                IoT / COMPUTER VISION
+                            </span>
+
+
+                            <h3>
+                                Intelligent Parking Management System
+                            </h3>
+
+
+                            <p>
+
+                                IoT-based automated parking solution combining
+                                embedded sensors, computer vision, cloud
+                                services and a web dashboard.
+
+                            </p>
+
+
+                            <ul class="project-features">
+
+                                <li>
+                                    Parking-slot detection
+                                </li>
+
+                                <li>
+                                    License-plate recognition
+                                </li>
+
+                                <li>
+                                    Cloud monitoring
+                                </li>
+
+                                <li>
+                                    Occupancy analytics
+                                </li>
+
+                            </ul>
+
+
+                            <div class="tech-stack">
+
+                                <span>ESP32</span>
+
+                                <span>OpenCV</span>
+
+                                <span>Flask</span>
+
+                                <span>Firebase</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 06 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="ai"
+                    >
+
+                        <div class="project-number">
+                            06
+                        </div>
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-face-viewfinder"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                COMPUTER VISION
+                            </span>
+
+
+                            <h3>
+
+                                Automated Attendance System
+                                with Face Recognition
+
+                            </h3>
+
+
+                            <p>
+
+                                Contactless attendance system using facial
+                                recognition with an administrative interface
+                                for managing records, statistics and reports.
+
+                            </p>
+
+
+                            <ul class="project-features">
+
+                                <li>
+                                    Face recognition
+                                </li>
+
+                                <li>
+                                    Attendance automation
+                                </li>
+
+                                <li>
+                                    Admin dashboard
+                                </li>
+
+                                <li>
+                                    Automated reporting
+                                </li>
+
+                            </ul>
+
+
+                            <div class="tech-stack">
+
+                                <span>Python</span>
+
+                                <span>OpenCV</span>
+
+                                <span>Tkinter</span>
+
+                                <span>Face Recognition</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
                 </div>
-                <img src="path-to-image/env-bot.jpg" alt="Env-Bot (NLP-based Chatbot)">
-            </li>
-            <li class="project-item">
-                <div class="project-description">
-                    <h3>Skill Bridge Platform</h3>
-                    <p>A platform connecting employers and workers, allowing job listings and filtering by occupation and location. Built using React, MongoDB, and Node.js.</p>
+
+
+                <div class="github-cta reveal">
+
+                    <p>
+                        Want to see more experiments and projects?
+                    </p>
+
+
+                    <a
+                        href="https://github.com/amitmaurya19"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                        Explore GitHub
+
+                    </a>
+
                 </div>
-                <img src="path-to-image/skill-bridge-platform.jpg" alt="Skill Bridge Platform">
-            </li>
-        </ul>
-    </section>
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Stay tuned for my latest blog posts on web development, technology trends, and more!</p>
-    </section>
-    <section id="contact" class="dark-section">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2024 Amit Kumar Maurya. All rights reserved.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             EXPERIENCE
+        =================================================== -->
+
+        <section
+            id="experience"
+            class="section"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        03 / EXPERIENCE
+                    </p>
+
+
+                    <h2>
+
+                        Where I've
+
+                        <span>
+                            worked & learned.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- NIELIT -->
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-marker"></div>
+
+
+                        <div class="timeline-date">
+
+                            JAN 2026 — MAR 2026
+
+                        </div>
+
+
+                        <div class="timeline-card">
+
+                            <div class="timeline-header">
+
+                                <div>
+
+                                    <h3>
+
+                                        System and Software Security Intern
+
+                                    </h3>
+
+
+                                    <p class="company">
+
+                                        NIELIT Gorakhpur
+
+                                    </p>
+
+                                </div>
+
+
+                                <span class="experience-type">
+
+                                    OFFLINE INTERNSHIP
+
+                                </span>
+
+                            </div>
+
+
+                            <p class="organization-note">
+
+                                ISEA Project Phase-III • Ministry of
+                                Electronics & Information Technology,
+                                Government of India
+
+                            </p>
+
+
+                            <p>
+
+                                Worked on practical cybersecurity concepts
+                                involving system security, vulnerability
+                                assessment, network security, security
+                                research and experimental security systems.
+
+                            </p>
+
+
+                            <div class="experience-tags">
+
+                                <span>
+                                    System Security
+                                </span>
+
+                                <span>
+                                    Network Security
+                                </span>
+
+                                <span>
+                                    Threat Modeling
+                                </span>
+
+                                <span>
+                                    Vulnerability Assessment
+                                </span>
+
+                                <span>
+                                    Security Research
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Vault of Codes -->
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-marker"></div>
+
+
+                        <div class="timeline-date">
+
+                            SEP 2024 — OCT 2024
+
+                        </div>
+
+
+                        <div class="timeline-card">
+
+                            <div class="timeline-header">
+
+                                <div>
+
+                                    <h3>
+                                        Python Development Intern
+                                    </h3>
+
+                                    <p class="company">
+                                        Vault of Codes
+                                    </p>
+
+                                </div>
+
+
+                                <span class="experience-type">
+                                    VIRTUAL
+                                </span>
+
+                            </div>
+
+
+                            <p>
+
+                                Completed project-based Python development
+                                assignments involving automation, web scraping,
+                                APIs and practical programming.
+
+                            </p>
+
+
+                            <div class="experience-tags">
+
+                                <span>
+                                    Python
+                                </span>
+
+                                <span>
+                                    Automation
+                                </span>
+
+                                <span>
+                                    APIs
+                                </span>
+
+                                <span>
+                                    Web Scraping
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             SKILLS
+        =================================================== -->
+
+        <section
+            id="skills"
+            class="section skills-section"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        04 / TECH STACK
+                    </p>
+
+
+                    <h2>
+
+                        Tools I use to
+
+                        <span>
+                            build & break things.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <!-- Programming -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Programming
+                        </h3>
+
+
+                        <div class="skill-tags">
+
+                            <span>Python</span>
+
+                            <span>C</span>
+
+                            <span>C++</span>
+
+                            <span>JavaScript</span>
+
+                            <span>SQL</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Web Development -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+
+                        <div class="skill-tags">
+
+                            <span>React.js</span>
+
+                            <span>Next.js</span>
+
+                            <span>Node.js</span>
+
+                            <span>Express.js</span>
+
+                            <span>Flask</span>
+
+                            <span>Django</span>
+
+                            <span>Tailwind CSS</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Cybersecurity -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-shield"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Cybersecurity
+                        </h3>
+
+
+                        <div class="skill-tags">
+
+                            <span>Nmap</span>
+
+                            <span>Wireshark</span>
+
+                            <span>Burp Suite</span>
+
+                            <span>Metasploit</span>
+
+                            <span>Scapy</span>
+
+                            <span>Packet Analysis</span>
+
+                            <span>Web Security</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Data & Cloud -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-database"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Data & Cloud
+                        </h3>
+
+
+                        <div class="skill-tags">
+
+                            <span>MongoDB</span>
+
+                            <span>MySQL</span>
+
+                            <span>Firebase</span>
+
+                            <span>NumPy</span>
+
+                            <span>Pandas</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AI & Computer Vision -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <h3>
+                            AI & Computer Vision
+                        </h3>
+
+
+                        <div class="skill-tags">
+
+                            <span>TensorFlow</span>
+
+                            <span>OpenCV</span>
+
+                            <span>Face Recognition</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Tools -->
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Tools & Platforms
+                        </h3>
+
+
+                        <div class="skill-tags">
+
+                            <span>Git</span>
+
+                            <span>GitHub</span>
+
+                            <span>Linux</span>
+
+                            <span>Kali Linux</span>
+
+                            <span>Ubuntu</span>
+
+                            <span>Socket.io</span>
+
+                            <span>Vercel</span>
+
+                            <span>Android SDK</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             ACHIEVEMENTS
+        =================================================== -->
+
+        <section
+            id="achievements"
+            class="section"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <p class="section-label">
+                        05 / ACHIEVEMENTS
+                    </p>
+
+
+                    <h2>
+
+                        A few meaningful
+
+                        <span>
+                            milestones.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <!-- Samsung Achievement -->
+
+                <div class="achievement-hero reveal">
+
+                    <div class="achievement-rank">
+
+                        <span>
+                            ALL INDIA
+                        </span>
+
+
+                        <strong>
+                            #1
+                        </strong>
+
+
+                        <span>
+                            RANK
+                        </span>
+
+                    </div>
+
+
+                    <div class="achievement-main-content">
+
+                        <p class="achievement-label">
+
+                            SAMSUNG INNOVATION CAMPUS 2024
+
+                        </p>
+
+
+                        <h3>
+
+                            National Topper in
+                            Coding & Programming
+
+                        </h3>
+
+
+                        <p>
+
+                            Secured All India Rank #1 and received recognition
+                            for performance in Samsung Innovation Campus 2024.
+
+                        </p>
+
+
+                        <div class="award-list">
+
+                            <span>
+
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                                ₹1,00,000 Cash Prize
+
+                            </span>
+
+
+                            <span>
+
+                                <i class="fa-solid fa-laptop"></i>
+
+                                Galaxy Book4 Pro 360
+
+                            </span>
+
+
+                            <span>
+
+                                <i class="fa-solid fa-trophy"></i>
+
+                                Trophy of Excellence
+
+                            </span>
+
+
+                            <span>
+
+                                <i class="fa-solid fa-newspaper"></i>
+
+                                Featured in Samsung Newsroom India
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Other Achievements -->
+
+                <div class="achievement-grid">
+
+
+                    <div class="achievement-card reveal">
+
+                        <div class="achievement-card-icon">
+
+                            <i class="fa-solid fa-cloud"></i>
+
+                        </div>
+
+
+                        <p class="achievement-label">
+
+                            GOOGLE CLOUD
+
+                        </p>
+
+
+                        <h3>
+
+                            Arcade Premium Milestone
+
+                        </h3>
+
+
+                        <p>
+
+                            Completed hands-on Google Cloud labs involving
+                            virtual machines, compute infrastructure and
+                            cloud operations.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="achievement-card reveal">
+
+                        <div class="achievement-card-icon">
+
+                            <i class="fa-solid fa-code-branch"></i>
+
+                        </div>
+
+
+                        <p class="achievement-label">
+
+                            OPEN SOURCE
+
+                        </p>
+
+
+                        <h3>
+
+                            Hacktoberfest 2024
+
+                        </h3>
+
+
+                        <p>
+
+                            Contributed to open-source projects through
+                            pull requests and collaboration with project
+                            maintainers.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="achievement-card reveal">
+
+                        <div class="achievement-card-icon">
+
+                            <i class="fa-solid fa-satellite"></i>
+
+                        </div>
+
+
+                        <p class="achievement-label">
+
+                            IIRS — ISRO
+
+                        </p>
+
+
+                        <h3>
+
+                            Geo-Data Sharing & Cyber Security
+
+                        </h3>
+
+
+                        <p>
+
+                            Completed certified training focused on
+                            geo-spatial data handling, satellite data
+                            security and cybersecurity fundamentals.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             RESUME
+        =================================================== -->
+
+        <section
+            id="resume"
+            class="section resume-section"
+        >
+
+            <div class="container">
+
+                <div class="resume-card reveal">
+
+                    <div>
+
+                        <p class="section-label">
+                            06 / RESUME
+                        </p>
+
+
+                        <h2>
+                            Want the concise version?
+                        </h2>
+
+
+                        <p>
+
+                            View my complete resume for a structured overview
+                            of my experience, projects, technical skills,
+                            education and achievements.
+
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="assets/Amit_Kumar_Maurya_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        Open Resume
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONTACT
+        =================================================== -->
+
+        <section
+            id="contact"
+            class="section contact-section"
+        >
+
+            <div class="container contact-container">
+
+
+                <div class="contact-content reveal">
+
+                    <p class="section-label">
+                        07 / CONTACT
+                    </p>
+
+
+                    <h2>
+
+                        Have something
+
+                        <span>
+                            interesting to build?
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        I'm interested in software engineering,
+                        cybersecurity and technology opportunities where
+                        I can build useful systems and solve meaningful
+                        technical problems.
+
+                    </p>
+
+
+                    <a
+                        href="mailto:akmaurya2657@gmail.com"
+                        class="email-link"
+                    >
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        akmaurya2657@gmail.com
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-links reveal">
+
+
+                    <a
+                        href="mailto:akmaurya2657@gmail.com"
+                        class="contact-card"
+                    >
+
+                        <div>
+
+                            <span>
+                                EMAIL
+                            </span>
+
+                            <strong>
+                                Send me a message
+                            </strong>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://linkedin.com/in/akmaurya2657"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+
+                        <div>
+
+                            <span>
+                                LINKEDIN
+                            </span>
+
+                            <strong>
+                                Let's connect
+                            </strong>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://github.com/amitmaurya19"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+
+                        <div>
+
+                            <span>
+                                GITHUB
+                            </span>
+
+                            <strong>
+                                Explore my code
+                            </strong>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <a
+                    href="#home"
+                    class="footer-logo"
+                >
+
+                    &lt;AKM /&gt;
+
+                </a>
+
+
+                <p>
+                    Designed & built by Amit Kumar Maurya.
+                </p>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <p>
+
+                    ©
+
+                    <span id="currentYear"></span>
+
+                    Amit Kumar Maurya
+
+                </p>
+
+
+                <a
+                    href="#home"
+                    class="back-to-top"
+                    aria-label="Back to top"
+                >
+
+                    <i class="fa-solid fa-arrow-up"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
     </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
