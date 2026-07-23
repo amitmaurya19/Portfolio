@@ -35,6 +35,19 @@ menuButton.addEventListener("click", () => {
 });
 
 
+const RESUME_URL = new URL("./assets/Amit_Kumar_Maurya_Resume.pdf", window.location.href).href;
+
+function openInNewTab(url) {
+  const link = document.createElement("a");
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
+
 // Close mobile menu after clicking navigation link
 
 document
@@ -634,7 +647,7 @@ function run(raw){
  if(c==="exit"){resetDefault();return}
  if(c==="clear"){terminalHistory.replaceChildren();if(terminalStaticContent)terminalStaticContent.style.display="none";if(terminalHint)terminalHint.style.display="none";bottom();return}
  if(c==="help"){help();return}
- if(c==="open resume"){out("Opening resume...","success");setTimeout(()=>window.open("assets/Amit_Kumar_Maurya_Resume.pdf","_blank","noopener,noreferrer"),200);return}
+ if(c==="open resume"){out("Opening resume...","success");openInNewTab(RESUME_URL);return}
  if(c==="email"){
  out("Opening Gmail Compose...","success");
  const gmailWindow=window.open(
